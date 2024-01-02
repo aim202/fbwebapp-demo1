@@ -1,5 +1,13 @@
 {
-  "dependencies": {
+    "scripts": {
+	"serve": "firebase emulators:start",
+	"deploy": "firebase deploy --only hosting",
+	"dev": "next dev",
+	"build": "next build && next export",
+	"start": "next start",
+	"lint": "next link"
+    },
+    "dependencies": {
     "firebase": "^10.7.1"
   }
 }
