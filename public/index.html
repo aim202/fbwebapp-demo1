@@ -59,6 +59,45 @@
  <main>
     <div id="message">
       <h2>Welcome</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Scheduling</title>
+</head>
+<body>
+    <h1>Appointment Scheduling</h1>
+    <form id="appointment-form">
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="time">Select a time:</label>
+        <select id="time" name="time" required>
+            <option value="9:00 AM">9:00 AM</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <!-- Add more time slots as needed -->
+        </select><br><br>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Schedule Appointment</button>
+    </form>
+
+    <div id="confirmation-message" style="display: none;">
+        <p>Appointment scheduled successfully!</p>
+    </div>
+
+    <script>
+        // JavaScript code to handle form submission and interaction with Firebase Firestore will go here.
+    </script>
+</body>
+</html>      
       <h1>Firebase Hosting Setup Complete</h1>
       <p>You're seeing this because you've copy-pasted Firebase Hosting. Now it's time to go build something super-ordinary!</p>
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
